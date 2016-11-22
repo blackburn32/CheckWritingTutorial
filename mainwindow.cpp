@@ -75,6 +75,10 @@ void MainWindow::on_continueButton_clicked()
         ui->continueButton->setEnabled(false);
         ui->dateBox->show();
     }
+    if(currentStep == 9)
+    {
+        ui->continueButton->setText("Close");
+    }
 }
 
 void MainWindow::on_dateBox_selectionChanged()
